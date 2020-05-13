@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "./layout";
 import { PostProps } from "../public/helpers/interfaces";
 import BlogList from "./blogList";
+import Layout from "./layout";
 
 const Blog: React.FC<PostProps> = ({ data, slugs }) => {
   return (

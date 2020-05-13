@@ -1,13 +1,12 @@
 import React from "react";
-import { DropdownButton, Dropdown } from "react-bootstrap";
+import { Dropdown, DropdownButton } from "react-bootstrap";
+import styled from "styled-components";
 
 interface ProjFilterProps {
   langs: Array<string>;
   selLang: string | null;
   setSelLang: any;
 }
-
-import styled from "styled-components";
 
 const Title = styled.h3`
   color: #ffffff;

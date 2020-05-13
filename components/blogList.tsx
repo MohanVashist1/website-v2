@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, Button, CardColumns } from "react-bootstrap";
-import { PostProps, data } from "../public/helpers/interfaces";
+import { Button, Card, CardColumns } from "react-bootstrap";
+import { data, PostProps } from "../public/helpers/interfaces";
 
 interface PostCardProp {
   data: data;

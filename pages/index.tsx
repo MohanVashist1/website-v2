@@ -1,14 +1,14 @@
-import React from "react";
-import Navigation from "../components/navigation";
-import Landing from "../components/landing";
-import Projects from "../components/projects";
-import ParticleEffect from "../components/particle";
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
-import { PostProps } from "../public/helpers/interfaces";
-import Blog from "../components/blog";
 import Head from "next/head";
+import path from "path";
+import React from "react";
+import Blog from "../components/blog";
+import Landing from "../components/landing";
+import Navigation from "../components/navigation";
+import ParticleEffect from "../components/particle";
+import Projects from "../components/projects";
+import { PostProps } from "../public/helpers/interfaces";
 
 const App: React.FC<PostProps> = ({ slugs, data }) => {
   return (

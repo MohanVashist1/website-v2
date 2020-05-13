@@ -1,6 +1,6 @@
-import "../public/main.css";
-import { SWRConfig } from "swr";
 import App from "next/app";
+import { SWRConfig } from "swr";
+import "../public/main.css";
 
 class MyApp extends App<{}, {}> {
   render() {

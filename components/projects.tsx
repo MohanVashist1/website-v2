@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import useSWR from "swr";
 import { Project } from "../public/helpers/interfaces";
-import ProjectList from "./projectList";
-import ProjectsFilter from "./projectFilters";
 import Layout from "./layout";
+import ProjectsFilter from "./projectFilters";
+import ProjectList from "./projectList";
 
 const Projects: React.FC = () => {
   const [selLang, setSelLang] = useState<string | null>(null);

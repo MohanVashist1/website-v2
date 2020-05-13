@@ -1,11 +1,11 @@
-import React from "react";
-import { Project } from "../public/helpers/interfaces";
-import { Card, CardColumns } from "react-bootstrap";
-import { Icon } from "@iconify/react";
-import starIcon from "@iconify/icons-emojione/star";
 import forkOutlined from "@iconify/icons-ant-design/fork-outlined";
+import starIcon from "@iconify/icons-emojione/star";
 import codeIcon from "@iconify/icons-entypo/code";
+import { Icon } from "@iconify/react";
+import React from "react";
+import { Card, CardColumns } from "react-bootstrap";
 import styled from "styled-components";
+import { Project } from "../public/helpers/interfaces";
 
 const Title = styled.h4`
   color: #212121;

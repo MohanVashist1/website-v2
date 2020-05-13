@@ -1,12 +1,12 @@
-import React from "react";
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
-import Head from "next/head";
 import marked from "marked";
-import { data } from "../../public/helpers/interfaces";
-import Layout from "../../components/layout";
+import Head from "next/head";
+import path from "path";
+import React from "react";
 import BlogNavigation from "../../components/blogNavigation";
+import Layout from "../../components/layout";
+import { data } from "../../public/helpers/interfaces";
 
 interface StaticProps {
   slug: string;
