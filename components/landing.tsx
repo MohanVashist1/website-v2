@@ -1,11 +1,11 @@
-import React from "react";
-import { Jumbotron, Container } from "react-bootstrap";
-import { Icon } from "@iconify/react";
-import githubSquare from "@iconify/icons-fa-brands/github-square";
-import linkedinIcon from "@iconify/icons-cib/linkedin";
 import filePdfFilled from "@iconify/icons-ant-design/file-pdf-filled";
-import emailIcon from "@iconify/icons-zmdi/email";
 import bxsChevronsDown from "@iconify/icons-bx/bxs-chevrons-down";
+import linkedinIcon from "@iconify/icons-cib/linkedin";
+import githubSquare from "@iconify/icons-fa-brands/github-square";
+import emailIcon from "@iconify/icons-zmdi/email";
+import { Icon } from "@iconify/react";
+import React from "react";
+import { Container, Jumbotron } from "react-bootstrap";
 
 const Landing: React.FC = () => {
   return (
