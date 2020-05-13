@@ -1,0 +1,43 @@
+{
+  "name": "mohan-vashist-personal-website-v2",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.13",
+    "@types/marked": "^0.7.4",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "gray-matter": "^4.0.2",
+    "marked": "^1.0.0",
+    "next": "latest",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-particles-js": "^3.2.1",
+    "styled-components": "^5.0.0",
+    "swr": "^0.2.0"
+  },
+  "devDependencies": {
+    "@iconify/icons-ant-design": "^1.0.8",
+    "@iconify/icons-brandico": "^1.0.7",
+    "@iconify/icons-bx": "^1.0.3",
+    "@iconify/icons-cib": "^1.0.2",
+    "@iconify/icons-emojione": "^1.0.7",
+    "@iconify/icons-entypo": "^1.0.5",
+    "@iconify/icons-fa-brands": "^1.0.12",
+    "@iconify/icons-ic": "^1.0.11",
+    "@iconify/icons-zmdi": "^1.0.3",
+    "@iconify/react": "^1.1.3",
+    "@types/node": "12.0.12",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.4",
+    "@types/styled-components": "5.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "typescript": "3.5.2"
+  },
+  "license": "ISC"
+}
