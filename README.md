@@ -1,7 +1,12 @@
 # My personal Website
 
 ### About:
-This website is used to showcase my personal projects as well as display all of the articles I have written
+This website is used to showcase my personal projects as well as display all of the articles I have written.
+
+### Tools Technologies Used
+- NextJs
+- React
+- TypeScript
 
 ### How to run:
   1) First Clone the repo
