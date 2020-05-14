@@ -29,7 +29,7 @@ const get = async (endpoint: string) => {
         return [];
       });
 };
-
+//@ts-ignore
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const repos = await get(endpoints.repos);
   const allLangs = new Set();

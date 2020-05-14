@@ -75,6 +75,20 @@ const Landing: React.FC = () => {
             id="chevronIndicator"
           />
         </Container>
+        <div className="animation-area">
+          <ul className="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </Jumbotron>
     </div>
   );

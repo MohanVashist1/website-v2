@@ -6,7 +6,6 @@ import React from "react";
 import Blog from "../components/blog";
 import Landing from "../components/landing";
 import Navigation from "../components/navigation";
-import ParticleEffect from "../components/particle";
 import Projects from "../components/projects";
 import { PostProps } from "../public/helpers/interfaces";
 
@@ -28,7 +27,6 @@ const App: React.FC<PostProps> = ({ slugs, data }) => {
         <Projects />
         <Blog data={data} slugs={slugs} />
       </div>
-      <ParticleEffect />
     </main>
   );
 };

@@ -18,7 +18,7 @@ interface PostProps {
   data: data;
 }
 
-const Post: React.FC<PostProps> = ({ slug, contents, data }) => {
+const Post: React.FC<PostProps> = ({ contents, data }) => {
   return (
     <main>
       <BlogNavigation />
