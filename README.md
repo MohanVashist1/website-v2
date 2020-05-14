@@ -2,7 +2,11 @@
 
 ### About:
 This website is used to showcase my personal projects as well as display all of the articles I have written.
-It uses TypeScript and NextJs
+
+### Tools Technologies Used
+- NextJs
+- React
+- TypeScript
 
 ### How to run:
   1) First Clone the repo
