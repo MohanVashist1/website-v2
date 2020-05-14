@@ -15,7 +15,7 @@ const App: React.FC<PostProps> = ({ slugs, data }) => {
     <main>
       <Head>
         <title>Mohan Vashist</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="Mohan Vashist's personal website" />
         <meta
           name="viewport"
@@ -50,6 +50,3 @@ export const getStaticProps = async () => {
 };
 
 export default App;
-
-// TODO: Google analytics
-// TODO: Deploy
