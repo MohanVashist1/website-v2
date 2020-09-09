@@ -7,6 +7,7 @@ This website is used to showcase my personal projects as well as display all of 
 - NextJs
 - React
 - TypeScript
+- Google Analytics 
 
 ### How to run:
   1) First Clone the repo
