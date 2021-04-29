@@ -15,20 +15,21 @@ const endpoints = {
 
 const get = async (endpoint: string) => {
   return axios
-      .get(endpoint, {
-        headers: {
-          Accept: 'application/vnd.github.v3+json',
-          Authorization: `token ${process.env.GH_AUTH}`,
-        },
-      })
-      .then((res) => {
-        return res.data;
-      })
-      .catch((e) => {
-        console.log(e);
-        return [];
-      });
+    .get(endpoint, {
+      headers: {
+        Accept: "application/vnd.github.v3+json",
+        Authorization: `token  ${process.env.GH_AUTH}`,
+      },
+    })
+    .then((res) => {
+      return res.data;
+    })
+    .catch((e) => {
+      console.log(e);
+      return [];
+    });
 };
+
 //@ts-ignore
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const repos = await get(endpoints.repos);
@@ -41,24 +42,24 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
               .then((contribData) => {
                 const langs = Object.keys(langData);
                 langs.forEach((lang: string) => allLangs.add(lang));
+                let curContribs = contribData
+                  .filter((user: any) => user.login === process.env.GH_NAME)
+                  .pop();
+                curContribs =
+                  curContribs === undefined ? 1 : curContribs.contributions;
                 return {
                   id: repos[i].id,
                   name: repos[i].name,
-                  desc: repos[i].description || '',
+                  desc: repos[i].description || "",
                   stars: repos[i].stargazers_count,
                   forks: repos[i].forks_count,
                   link: repos[i].html_url,
-                  contribs:
-                      contribData
-                          .filter(
-                              (user: any) => user.login === process.env.GH_NAME)
-                          .pop()
-                          .contributions,
+                  contribs: curContribs,
                   langs,
                 };
               });
         }));
   }
-  projects.sort((a, b) => b.stars + b.forks - (a.stars + a.forks));
+  projects.sort((a, b) => b.stars - a.stars);
   res.status(200).json({projects, langs: Array.from(allLangs)});
 };
