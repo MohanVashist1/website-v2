@@ -1,5 +1,6 @@
 import Document, {
   DocumentContext,
+  Html,
   Head,
   Main,
   NextScript,
@@ -34,7 +35,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <html>
+      <Html>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
@@ -58,7 +59,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
