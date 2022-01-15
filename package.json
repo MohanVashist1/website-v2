@@ -13,7 +13,7 @@
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "gray-matter": "^4.0.2",
-    "marked": "^1.0.0",
+    "marked": "^4.0.10",
     "next": "latest",
     "react": "^17.0.2",
     "react-bootstrap": "^1.0.1",
